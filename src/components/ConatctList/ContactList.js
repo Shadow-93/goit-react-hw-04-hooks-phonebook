@@ -1,7 +1,7 @@
 import React from "react";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-import ContactListItem from "./ContactListItem";
+import ContactListItem from "./ContactListItem/ContactListItem";
 
 import s from "./ContactList.module.css";
 
@@ -29,10 +29,10 @@ ContactList.propTypes = {
     PropTypes.exact({
       id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-      number: PropTypes.string.isRequired
+      number: PropTypes.string.isRequired,
     })
   ),
   onRemoveContact: PropTypes.func.isRequired,
-}
+};
 
 export default ContactList;

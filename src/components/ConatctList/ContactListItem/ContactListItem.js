@@ -1,7 +1,7 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import s from "./ContactList.module.css";
+import s from "../ContactList.module.css";
 
 const ContactListItem = ({ name, number, onRemove }) => (
   <li className={s.listItem}>
@@ -13,9 +13,9 @@ const ContactListItem = ({ name, number, onRemove }) => (
 );
 
 ContactListItem.propTypes = {
-name: PropTypes.string.isRequired,
-number: PropTypes.string.isRequired,
-onRemove: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
+  onRemove: PropTypes.func.isRequired,
 };
 
 export default ContactListItem;

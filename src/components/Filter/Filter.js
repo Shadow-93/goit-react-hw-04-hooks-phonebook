@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
 import s from "./Filter.module.css";
 
@@ -17,7 +17,7 @@ const Filter = ({ onSearchFilter }) => {
 };
 
 Filter.propTypes = {
-  onSearchFilter: PropTypes.func.isRequired
-}
+  onSearchFilter: PropTypes.func.isRequired,
+};
 
 export default Filter;
