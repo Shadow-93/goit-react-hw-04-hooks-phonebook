@@ -43,7 +43,7 @@ export default function App () {
       setFilter(filter)
   };
 
-        const getContacts = () => {
+        const getContacts = (filter, contacts) => {
       
           return contacts.filter((contact) =>
             contact.name.toLowerCase().includes(filter.toLowerCase())
@@ -59,7 +59,7 @@ return (
           <Filter value={filter} onSearchFilter={searchFilter} />
           {contacts.length>0 &&
             <ContactList
-              contacts={getContacts()}
+              contacts={getContacts(filter, contacts)}
               onRemoveContact={removeContact}
             />
              } 
