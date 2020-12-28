@@ -1,0 +1,26 @@
+.list {
+  padding: 30px;
+  margin: 0;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.listItem:not(:last-child) {
+  margin-bottom: 10px;
+}
+.listItem button {
+  font-size: 12px;
+  outline: none;
+  background-color: #fff;
+  border: 1px solid #d8d6d6;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.listItem button:active {
+  background-color: rgb(76, 64, 255);
+}
